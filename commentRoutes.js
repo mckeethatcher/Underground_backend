@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const Comment = require('../models/Comment');
 const auth = require('../middleware/auth');
+const mongoose = require('mongoose');
+
 
 router.post('/comments', auth, async (req, res) => {
   try {
