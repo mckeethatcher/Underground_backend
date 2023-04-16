@@ -4,7 +4,7 @@ const logger = require("morgan")
 const cors = require("cors")
 
 const PORT = process.env.PORT || 3001
-const db = require("./db")
+const db = require(".")
 
 const app = express()
 app.use(cors())
